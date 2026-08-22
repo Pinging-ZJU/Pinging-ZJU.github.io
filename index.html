@@ -13,6 +13,39 @@
 <link rel="shortcut icon" href="images/favicon/favicon.ico">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<style>
+
+/* ================= Language Switch ================= */
+
+.lang-switch {
+  text-align: center;
+  margin: 10px 0 16px 0;
+}
+
+.lang-switch button {
+  background: none;
+  border: none;
+  padding: 0 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #1772d0;
+}
+
+.lang-switch button.active {
+  font-weight: bold;
+  color: #000000;
+}
+
+.lang-switch button:hover {
+  text-decoration: underline;
+}
+
+.cn {
+  display: none;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -28,8 +61,9 @@ margin:auto;">
 
 <td>
 
-
-<!-- ================= Profile ================= -->
+<!-- ====================================================== -->
+<!-- Profile -->
+<!-- ====================================================== -->
 
 <table style="width:100%;border:0px;border-spacing:0px;">
 <tbody>
@@ -42,10 +76,51 @@ margin:auto;">
 陈平 (Ping Chen)
 </p>
 
+
+<!-- English Header -->
+
+<div class="en">
+
 <p style="text-align:center;">
 ZJU 100-Talent Program Professor [百人计划研究员]<br>
-State Key Laboratory of Blockchain and Data Security, Zhejiang University<br>
+State Key Laboratory of Blockchain and Data Security, Zhejiang University
 </p>
+
+</div>
+
+
+<!-- Chinese Header -->
+
+<div class="cn">
+
+<p style="text-align:center;">
+浙江大学“百人计划”研究员<br>
+浙江大学区块链与数据安全全国重点实验室
+</p>
+
+</div>
+
+
+<!-- Language Switch -->
+
+<div class="lang-switch">
+
+<button id="btn-en" class="active" onclick="setLanguage('en')">
+English
+</button>
+
+<span>/</span>
+
+<button id="btn-cn" onclick="setLanguage('cn')">
+中文
+</button>
+
+</div>
+
+
+<!-- ================= English Profile ================= -->
+
+<div class="en">
 
 <p style="text-align:justify">
 
@@ -79,13 +154,72 @@ and AI cluster scheduling.
 <p style="text-align:justify">
 
 My research has been published in leading computer systems journals and conferences,
-including IEEE TC, IEEE TPDS, ACM TOS, USENIX FAST,
-and other top-tier systems conferences.
+including FAST, EuroSys, SIGMOD, KDD, IEEE TC, IEEE TPDS, ICPP, CLUSTER and other top-tier systems conferences.
 
 I aim to build efficient and scalable AI systems
 for next-generation intelligent computing platforms.
 
 </p>
+
+</div>
+
+
+<!-- ================= Chinese Profile ================= -->
+
+<div class="cn">
+
+<p style="text-align:justify">
+
+陈平，男，博士，杭州高新区（滨江）区块链与数据安全研究院/
+浙江大学区块链与数据安全全国重点实验室研究员，
+CCF信息存储技术专业委员会执行委员、CCF体系结构专业委员会执行委员，
+于浙江大学计算机科学与技术学院取得博士学位，
+曾获浙江大学国家奖学金、浙江大学优秀毕业生等荣誉。
+
+</p>
+
+<p style="text-align:justify">
+
+长期从事大模型训练与推理系统优化、高性能存储系统等方向研究，主要聚焦于大模型训练与推理过程中的存储优化、显存管理与数据访问加速等关键技术。近年来，与百度、华为云、之江实验室等国内头部企业及科研机构开展合作研究，负责智能计算集群中大模型训练与推理模块的研发与性能调优，目前在蚂蚁集团担任访问学者，参与大模型推理KV存储系统的加速。围绕大模型训练与推理场景下高效数据访问与存储需求，提出了一系列面向训练缓存、显存扩展与推理加速的存储优化方法，实现了存储空间与带宽资源的高效利用，显著降低系统运行成本并提升整体训练与推理效率。相关成果已在华为云昇腾产品线、之江实验室“万卡工程”智能计算集群及阿里云相关存储项目中完成工程化落地并实现实际应用，减少30%成本。
+
+</p>
+
+<p style="text-align:justify">
+
+主持申请或参与科研项目多项，
+包括2025国家重点研发计划（青年科学家项目课题负责人）、
+国家自然科学基金面上项目、浙江省重大专项、浙江省尖兵计划、
+CCF–百度松果基金、浙江省新苗人才计划、国家电网科研合作等项目。
+
+</p>
+
+<p style="text-align:justify">
+
+学术研究方面，在FAST、EuroSys、SIGMOD、KDD、IEEE TC、IEEE TPDS、
+ICPP、CLUSTER等CCF A类国际会议与期刊上发表论文10余篇；
+申请发明专利20余项、软件著作权5项。
+成果荣获2024年浙江省科学技术进步一等奖、
+2023年中国国际大学生创新大赛银奖、
+2025年CCF中国存储大会最佳论文海报奖、
+2025年大学生信息存储技术竞赛自由赛一等奖、
+2024年大学生信息存储技术竞赛自由赛二等奖、
+2025年大学生信息存储技术竞赛挑战赛三等奖等荣誉。
+
+</p>
+
+<p style="text-align:justify">
+
+学术服务方面，担任NIPS 2025、EuroSys 2025 Shadow PC、
+IEEE TC、IEEE TPDS、APPT 2026、ChinaSys 2025 Winter等
+多个CCF-A类国际会议与期刊审稿人，
+并协助组织ChinaSys 2024、CCF系统软件技术大会2025等学术会议。
+
+</p>
+
+</div>
+
+
+<!-- Links -->
 
 <p style="text-align:center">
 
@@ -109,7 +243,10 @@ Zhihu
 
 </td>
 
-<td style="padding:2.5%;width:35%">
+
+<!-- Photo -->
+
+<td style="padding:2.5%;width:35%;vertical-align:top;">
 
 <img src="images/self.jpg"
 style="width:100%;
@@ -124,7 +261,9 @@ border-radius:50%;">
 </table>
 
 
-<!-- ================= Research ================= -->
+<!-- ====================================================== -->
+<!-- Research Interests -->
+<!-- ====================================================== -->
 
 <table width="100%">
 <tbody>
@@ -132,6 +271,11 @@ border-radius:50%;">
 <tr>
 
 <td style="padding:20px">
+
+
+<!-- English -->
+
+<div class="en">
 
 <h2>Research Interests</h2>
 
@@ -171,6 +315,50 @@ Large-scale AI cluster scheduling and resource management
 
 </ul>
 
+</div>
+
+
+<!-- Chinese -->
+
+<div class="cn">
+
+<h2>研究方向</h2>
+
+<p style="text-align:justify">
+
+主要研究面向大规模人工智能负载的系统级优化技术，
+从内存、存储、计算与调度等角度研究高效智能计算基础设施。
+
+目前主要研究方向包括：
+
+</p>
+
+<ul>
+
+<li>
+大模型训练系统与显存优化
+</li>
+
+<li>
+大语言模型推理系统与 KV Cache 管理
+</li>
+
+<li>
+AI 数据流水线加速与检查点优化
+</li>
+
+<li>
+AI 原生存储系统与异构内存计算
+</li>
+
+<li>
+大规模智能计算集群调度与资源管理
+</li>
+
+</ul>
+
+</div>
+
 </td>
 
 </tr>
@@ -179,7 +367,9 @@ Large-scale AI cluster scheduling and resource management
 </table>
 
 
-<!-- ================= Team ================= -->
+<!-- ====================================================== -->
+<!-- Research Team -->
+<!-- ====================================================== -->
 
 <table width="100%">
 <tbody>
@@ -187,19 +377,44 @@ Large-scale AI cluster scheduling and resource management
 <tr>
 
 <td style="padding:20px">
+
+
+<div class="en">
 
 <h2>Research Team</h2>
 
 <p style="text-align:justify">
 
-I work with a research team focusing on efficient AI systems and intelligent computing infrastructure.
+I work with a research team focusing on efficient AI systems
+and intelligent computing infrastructure.
 
 The team investigates large model training, inference optimization,
 memory management, storage systems, and heterogeneous computing platforms.
 
-We collaborate with universities and industry partners to develop practical AI system solutions.
+We collaborate with universities and industry partners
+to develop practical AI system solutions.
 
 </p>
+
+</div>
+
+
+<div class="cn">
+
+<h2>研究团队</h2>
+
+<p style="text-align:justify">
+
+团队主要围绕高效人工智能系统与智能计算基础设施开展研究，
+重点研究大模型训练与推理优化、显存管理、高性能存储系统
+以及异构计算平台等方向。
+
+团队与国内高校、科研机构及产业界保持长期合作，
+面向大规模智能计算场景开展系统关键技术研究与工程化应用。
+
+</p>
+
+</div>
 
 </td>
 
@@ -209,7 +424,9 @@ We collaborate with universities and industry partners to develop practical AI s
 </table>
 
 
-<!-- ================= Research Projects ================= -->
+<!-- ====================================================== -->
+<!-- Research Projects -->
+<!-- ====================================================== -->
 
 <table width="100%">
 <tbody>
@@ -217,42 +434,88 @@ We collaborate with universities and industry partners to develop practical AI s
 <tr>
 
 <td style="padding:20px">
+
+
+<div class="en">
 
 <h2>Research Projects</h2>
 
 <ul>
 
 <li>
-<b>National Key R&D Program of China (Young Scientist Project)</b>,
+<b>National Key R&amp;D Program of China (Young Scientist Project)</b>,
 Continuous Post-training System for Reasoning Models on Domestic Intelligent Computing Platforms,
-2026.6--2029.5,
+2026.6--2029.5
 </li>
 
 <li>
 <b>Zhejiang Province "Pioneer" Program</b>,
 Key Technologies for Long-context Reasoning Large Models,
-2026.1--2028.12,
+2026.1--2028.12
 </li>
 
 <li>
 <b>Ant Group Research Project</b>,
 I/O Performance Optimization for Large Model Training,
-2024.7--2025.7,
+2024.7--2025.7
 </li>
 
 <li>
 <b>State Grid Research Project</b>,
 Intelligent Technologies for Distribution Network Risk Management Based on Digital Twins,
-2026.6--2026.12,
+2026.6--2026.12
 </li>
 
 <li>
 <b>CCF-Baidu Pinecone Fund</b>,
 Adaptive Memory Optimization for Large Model Training,
-2025.12--2026.12,
+2025.12--2026.12
 </li>
 
 </ul>
+
+</div>
+
+
+<div class="cn">
+
+<h2>科研项目</h2>
+
+<ul>
+
+<li>
+<b>国家重点研发计划（青年科学家项目）</b>，
+面向国产智算平台的推理模型持续后训练系统，
+2026.6--2029.5
+</li>
+
+<li>
+<b>浙江省“尖兵”计划</b>，
+长上下文推理大模型关键技术研究，
+2026.1--2028.12
+</li>
+
+<li>
+<b>蚂蚁集团科研合作项目</b>，
+大模型训练 I/O 性能优化，
+2024.7--2025.7
+</li>
+
+<li>
+<b>国家电网科研合作项目</b>，
+基于数字孪生的配电网风险管理智能化技术研究，
+2026.6--2026.12
+</li>
+
+<li>
+<b>CCF–百度松果基金</b>，
+大模型训练自适应显存优化，
+2025.12--2026.12
+</li>
+
+</ul>
+
+</div>
 
 </td>
 
@@ -262,12 +525,16 @@ Adaptive Memory Optimization for Large Model Training,
 </table>
 
 
-<!-- ================= Publications ================= -->
+<!-- ====================================================== -->
+<!-- Publications -->
+<!-- Always English -->
+<!-- ====================================================== -->
 
 <table width="100%">
 <tbody>
 
 <tr>
+
 <td style="padding:20px">
 
 <h2>Publications</h2>
@@ -285,13 +552,20 @@ GNexus: Bridging In-Memory and Near-Memory Processing for Density-Aware Graph An
 
 <br>
 
-Wenjiong Wang, Shuibing He*, Siling Yang, Xuechen Zhang,
-<strong>Ping Chen</strong>, Tong Wu, Gang Chen, and Yucheng Zhang
+Wenjiong Wang,
+Shuibing He*,
+Siling Yang,
+Xuechen Zhang,
+<strong>Ping Chen</strong>,
+Tong Wu,
+Gang Chen,
+and Yucheng Zhang
 
 <br>
 
 <em>
-Proceedings of the 22nd European Conference on Computer Systems (EuroSys'27, CCF-A)
+Proceedings of the 22nd European Conference on Computer Systems
+(EuroSys'27, CCF-A)
 </em>
 
 <br>
@@ -315,9 +589,14 @@ NVREC: A High-Performance Recoverable Recommendation System for Non-Volatile Mem
 
 <br>
 
-<strong>Ping Chen</strong>, Shuibing He*, Peiyi Hong,
-Xuechen Zhang, Siling Yang, Tong Wu,
-Gang Chen, Xian-He Sun
+<strong>Ping Chen</strong>,
+Shuibing He*,
+Peiyi Hong,
+Xuechen Zhang,
+Siling Yang,
+Tong Wu,
+Gang Chen,
+Xian-He Sun
 
 <br>
 
@@ -671,61 +950,121 @@ Journal of Circuits, Systems and Computers (SCI)
 
 </div>
 
-</td>
-</tr>
 
-</tbody>
-</table>
+<!-- ====================================================== -->
+<!-- Honors & Awards -->
+<!-- ====================================================== -->
 
+<!-- English -->
 
-<!-- ================= Awards ================= -->
+<div class="en">
 
-<table width="100%">
-<tbody>
-
-<tr>
-
-<td style="padding:20px">
-
-<h2>Honors & Awards</h2>
+<h2 style="margin-top:30px;">Honors &amp; Awards</h2>
 
 <ul>
+
+<li>
+2025 First Prize, Free Track, 3rd National College Student Information Storage Technology Competition
+</li>
+
+<li>
+2025 Third Prize, Challenge Track, 3rd National College Student Information Storage Technology Competition
+</li>
 
 <li>
 2024 Zhejiang Provincial Science and Technology Progress Award (First Prize)
 </li>
 
 <li>
-National Scholarship (2023-2024)
+2024 Outstanding Graduate, Zhejiang University
 </li>
 
 <li>
-Outstanding Graduate, Zhejiang University
+2024 Second Prize, Free Track, 2nd National College Student Information Storage Technology Competition
 </li>
 
 <li>
-Silver Award, China International College Students' Innovation Competition
+2023-2024 National Scholarship
 </li>
 
 <li>
-National Scholarship (2017-2018)
+2023 Silver Award, China International College Students' Innovation Competition
+</li>
+
+<li>
+2019 Outstanding Graduation Project and Outstanding Graduate
+</li>
+
+<li>
+2015-2016 National Scholarship
 </li>
 
 </ul>
 
-</td>
-
-</tr>
-
-</tbody>
-</table>
+</div>
 
 
-<!-- ================= Academic Service ================= -->
+<!-- Chinese -->
+
+<div class="cn">
+
+<h2 style="margin-top:30px;">荣誉与奖励</h2>
+
+<ul>
+
+<li>
+2025 年 第三届全国大学生信息存储技术竞赛自由赛一等奖
+</li>
+
+<li>
+2025 年 第三届全国大学生信息存储技术竞赛挑战赛三等奖
+</li>
+
+<li>
+2024 年 浙江省科学技术进步一等奖
+</li>
+
+<li>
+2024 年 浙江大学优秀毕业生
+</li>
+
+<li>
+2024 年 第二届全国大学生信息存储技术竞赛自由赛二等奖
+</li>
+
+<li>
+2023 年~2024 年 国家奖学金
+</li>
+
+<li>
+2023 年 中国国际大学生创新大赛银奖
+</li>
+
+<li>
+2019 年 优秀毕业设计、优秀毕业生
+</li>
+
+<li>
+2015 年~2016 年 国家奖学金
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- ====================================================== -->
+<!-- Academic Service -->
+<!-- ====================================================== -->
+
+
+<!-- English -->
+
+<div class="en">
 
 <h2>Academic Service</h2>
 
-<h3>Program Committee & Reviewer</h3>
+<h3>Program Committee &amp; Reviewer</h3>
 
 <ul>
 
@@ -780,13 +1119,135 @@ CCF System Software Technology Conference 2025
 
 </ul>
 
+</div>
+
+
+<!-- Chinese -->
+
+<div class="cn">
+
+<h2>学术服务</h2>
+
+<h3>程序委员会与审稿</h3>
+
+<ul>
+
+<li>
+IEEE International Symposium on High-Performance Computer Architecture
+(<strong>HPCA 2027</strong>)
+</li>
+
+<li>
+IEEE International Conference on Networking, Architecture and Storage
+(<strong>NAS 2027</strong>)
+</li>
+
+<li>
+European Conference on Computer Systems
+(<strong>EuroSys 2025</strong>，Shadow Program Committee)
+</li>
+
+<li>
+International Symposium on Advanced Parallel Processing Technology
+(<strong>APPT 2026</strong>)
+</li>
+
+<li>
+ChinaSys 2025 Winter
+</li>
+
+<li>
+IEEE Transactions on Computers
+(<strong>IEEE TC</strong>)
+</li>
+
+<li>
+IEEE Transactions on Parallel and Distributed Systems
+(<strong>IEEE TPDS</strong>)
+</li>
+
+</ul>
+
+
+<h3>会议组织</h3>
+
+<ul>
+
+<li>
+ChinaSys 2024
+</li>
+
+<li>
+CCF系统软件技术大会 2025
+</li>
+
+</ul>
+
+</div>
+
+
 </td>
 
 </tr>
 
 </tbody>
-
 </table>
+
+
+</td>
+
+</tr>
+
+</tbody>
+</table>
+
+
+<!-- ====================================================== -->
+<!-- Language Switch Script -->
+<!-- ====================================================== -->
+
+<script>
+
+function setLanguage(lang) {
+
+    const englishElements = document.querySelectorAll(".en");
+    const chineseElements = document.querySelectorAll(".cn");
+
+    if (lang === "cn") {
+
+        englishElements.forEach(function(element) {
+            element.style.display = "none";
+        });
+
+        chineseElements.forEach(function(element) {
+            element.style.display = "block";
+        });
+
+        document.getElementById("btn-cn").classList.add("active");
+        document.getElementById("btn-en").classList.remove("active");
+
+        document.documentElement.lang = "zh-CN";
+
+    } else {
+
+        englishElements.forEach(function(element) {
+            element.style.display = "block";
+        });
+
+        chineseElements.forEach(function(element) {
+            element.style.display = "none";
+        });
+
+        document.getElementById("btn-en").classList.add("active");
+        document.getElementById("btn-cn").classList.remove("active");
+
+        document.documentElement.lang = "en";
+
+    }
+
+}
+
+</script>
 
 </body>
 
