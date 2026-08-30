@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
 
@@ -40,8 +40,14 @@
   text-decoration: underline;
 }
 
-.cn {
+/* Default language: Chinese */
+
+.en {
   display: none;
+}
+
+.cn {
+  display: block;
 }
 
 </style>
@@ -105,13 +111,13 @@ State Key Laboratory of Blockchain and Data Security, Zhejiang University
 
 <div class="lang-switch">
 
-<button id="btn-en" class="active" onclick="setLanguage('en')">
+<button id="btn-en" onclick="setLanguage('en')">
 English
 </button>
 
 <span>/</span>
 
-<button id="btn-cn" onclick="setLanguage('cn')">
+<button id="btn-cn" class="active" onclick="setLanguage('cn')">
 中文
 </button>
 
