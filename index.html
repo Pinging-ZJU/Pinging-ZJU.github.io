@@ -40,6 +40,36 @@
   text-decoration: underline;
 }
 
+/* Photo is beside the name/contact header only; biography stays full width. */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+.profile-header-text {
+  flex: 1;
+  min-width: 0;
+}
+.profile-photo {
+  display: block;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex: 0 0 190px;
+}
+@media (max-width: 600px) {
+  .profile-header { gap: 12px; }
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    flex-basis: 100px;
+  }
+  .profile-header-text .name { font-size: clamp(20px, 5vw, 32px); }
+  .profile-header-text p:not(.name) { font-size: 13px; }
+}
+
 /* Default language: Chinese */
 
 .en {
@@ -76,7 +106,10 @@ margin:auto;">
 
 <tr>
 
-<td style="padding:2.5%;width:65%;vertical-align:middle">
+<td class="profile-content" style="padding:2.5%;width:100%;vertical-align:top">
+
+<div class="profile-header">
+<div class="profile-header-text">
 
 <p class="name" style="text-align:center;">
 陈平 (Ping Chen)
@@ -124,6 +157,9 @@ English
 
 </div>
 
+</div>
+<img class="profile-photo" src="images/self.jpg" alt="Ping Chen">
+</div>
 
 <!-- ================= English Profile ================= -->
 
@@ -195,8 +231,7 @@ for next-generation intelligent computing platforms.
 
 <p style="text-align:justify">
 
-陈平，男，博士，杭州高新区（滨江）区块链与数据安全研究院/
-浙江大学区块链与数据安全全国重点实验室研究员，
+陈平，男，博士，浙江大学区块链与数据安全全国重点实验室百人计划研究员，
 CCF信息存储技术专业委员会执行委员、CCF体系结构专业委员会执行委员，
 于浙江大学计算机科学与技术学院取得博士学位，
 曾获浙江大学国家奖学金、浙江大学优秀毕业生等荣誉。
@@ -277,18 +312,6 @@ Zhihu
 </a>
 
 </p>
-
-</td>
-
-
-<!-- Photo -->
-
-<td style="padding:2.5%;width:35%;vertical-align:top;">
-
-<img src="images/self.jpg"
-style="width:100%;
-max-width:100%;
-border-radius:50%;">
 
 </td>
 
